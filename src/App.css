@@ -1,15 +1,19 @@
 .App {
   text-align: left;
   font-family: SourceSansPro, sans-serif;
+  background-image: url("./styles/christmas-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-header {
   height: 75px;
   padding: 20px;
-  background-color: #0089df;
-  color: #ffffff;
+  color: #0089df;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 150px;
+  font-size: 3em;
 }
 
 .App-intro {
@@ -18,5 +22,5 @@
 
 @font-face {
     font-family: 'SourceSansPro';
-    src: url('./fonts/SourceSansPro-Bold.otf');
+    src: url('./styles/fonts/SourceSansPro-Bold.otf');
 }

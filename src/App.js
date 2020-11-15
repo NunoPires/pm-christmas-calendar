@@ -3,10 +3,8 @@ import {CalendarLayout} from './components/calendar.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>It's Christmaaaaas</h2>
-      </header>
+    <div className="App calendar">
+      <header className="App-header">It's Christmaaaaas</header>
       <CalendarLayout />
     </div>
   );
