@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import _ from 'underscore';
-import {CalendarItem} from './calendar-day.js'
+import {CalendarItem} from './calendar-item.js'
 
 export class CalendarLayout extends Component {
     
