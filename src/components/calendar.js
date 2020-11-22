@@ -8,6 +8,7 @@ export class CalendarLayout extends Component {
     constructor() {
         super();
         this.state = {calendarData: null};
+        this.audio = new Audio(window.location + "sounds/jingle-bells.mp3");
     }
     
     componentDidMount() {
@@ -37,7 +38,7 @@ export class CalendarLayout extends Component {
         
         // 0=January, 11 = December
         let days = _.map(this.getCalendarDays(11, 2020, 25), (date) => {
-            return <CalendarItem key={date.getDate()} date={date} calendarData={this.state.calendarData}/>   
+            return <CalendarItem key={date.getDate()} date={date} calendarData={this.state.calendarData} sound={this.audio}/>   
         });
         
         return (

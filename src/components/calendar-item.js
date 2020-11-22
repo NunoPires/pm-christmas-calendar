@@ -28,7 +28,7 @@ export class CalendarItem extends Component {
     handleKeyDown(event) {
 
         if(event.key === "Escape" && this.state.showDetail) {
-            this.toggleDetail();
+            this.setState({showDetail: !this.state.showDetail});
         }
     }
 
@@ -37,6 +37,7 @@ export class CalendarItem extends Component {
     }
 
     toggleDetail() {
+        this.props.sound.play();
         this.setState({showDetail: !this.state.showDetail, viewed: true});
         ls.set(this.props.date.getDate(), true);
     }
