@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import _ from 'underscore';
+import Lottie from 'lottie-web';
+import animationData from '../animations/christmas.json';
 import {CalendarItem} from './calendar-item.js';
 import {CalendarAPI} from '../services/calendar-api.js';
  
@@ -13,15 +15,23 @@ export class CalendarLayout extends Component {
     
     componentDidMount() {
         let api = new CalendarAPI();
-        api.fetchCalendarData()
-            .then(
+        api.fetchCalendarData().then(
                 (data) => {
                     this.setState({calendarData: data});
                 },
                 (error) => {
                     console.log(error);
                 }
-            );
+        );
+
+        this.animation 
+        = Lottie.loadAnimation({
+            container: document.getElementById("calendar-animation"),
+            renderer: 'html',
+            loop: true,
+            autoplay: true,
+            animationData: animationData
+        });
     }
 
     getCalendarDays(month, year, dayLimit) {
@@ -35,15 +45,21 @@ export class CalendarLayout extends Component {
     }
     
     render() {
+
+        if(this.animation !== undefined) {
+            this.animation.play();
+        }
         
         // 0=January, 11 = December
-        let days = _.map(this.getCalendarDays(11, 2020, 25), (date) => {
+        let days = _.map(this.getCalendarDays(11, 2020, 26), (date) => {
             return <CalendarItem key={date.getDate()} date={date} calendarData={this.state.calendarData} sound={this.audio}/>   
         });
         
         return (
-            <div className="container">
-                {days}
+            <div id="calendar-animation">
+                <div id="calendar" className="container">
+                    {days}
+                </div>
             </div>
         );
     }

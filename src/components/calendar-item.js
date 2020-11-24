@@ -43,11 +43,11 @@ export class CalendarItem extends Component {
     }
 
     render() {
-        let className = "col-md-2 calendar-item";
+        let className = "calendar-item";
         if(this.state.viewed) {
             className+= " viewed";
         }
-
+    
         let currentDay = this.props.date.getDate();
         let content = this.fetchCalendarItemDetail();
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
