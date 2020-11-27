@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'recoletamedium';
+	src: url('recoleta-medium-webfont.woff2') format('woff2'),
+		url('recoleta-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'recoleta_altbold';
+	src: url('recoletaalt-bold-webfont.woff2') format('woff2'),
+		url('recoletaalt-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}

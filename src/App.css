@@ -1,26 +1,41 @@
-.App {
-  text-align: left;
-  font-family: SourceSansPro, sans-serif;
-  background-image: url("./styles/christmas-background.jpg");
+.app {
+  background-color: #E0EFF0;
+  background-image: url("assets/images/background.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
 }
 
-.App-header {
-  height: 75px;
-  padding: 20px;
-  color: #0089df;
-  font-weight: bold;
-  margin: 20px 150px;
-  font-size: 3em;
+.app-header {
+  height: 200px;
+  text-align: center;
+  font-family: 'recoletamedium';
+  font-size: 40px;
+  padding: 40px;
 }
 
-.App-intro {
+.app-intro {
   font-size: large;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: url('./styles/fonts/SourceSansPro-Bold.otf');
+  font-family: 'SourceSansPro';
+  src: url('./styles/fonts/SourceSansPro-Bold.otf');
+}
+
+.logo-premium {
+  background-image: url("/src/assets/images/logo-premium.svg");
+  width: 53px;
+  height: 53px;
+  margin: 0 auto 20px;
+}
+
+.title {
+  line-height: 40px;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 30px;
+  }
 }

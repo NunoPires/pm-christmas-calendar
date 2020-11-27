@@ -57,7 +57,7 @@ export class CalendarLayout extends Component {
         
         return (
             <div id="calendar-animation">
-                <div id="calendar" className="container">
+                <div id="calendar" className="container-fluid">
                     {days}
                 </div>
             </div>
