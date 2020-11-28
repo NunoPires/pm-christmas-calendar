@@ -602,7 +602,7 @@ code {
 
 .calendar-modal {
   width: 90%;
-  max-width: 992px;
+  max-width: 765px;
   border-radius: 8px;
   background-color: var(--modal-background);
   margin: 70px auto;
