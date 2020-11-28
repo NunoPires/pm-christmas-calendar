@@ -113,19 +113,28 @@ code {
 
 @media (max-width: 576px) {
   #calendar {
-    zoom: 48%;
+    zoom: 0.5;
+    -ms-zoom: 0.5;
+    -webkit-zoom: 0.5;
+    -moz-transform: scale(0.5, 0.5);
   }
 }
 
 @media (min-width: 576px) {
   #calendar {
-    zoom: 78%;
+    zoom: 0.8;
+    -ms-zoom: 0.8;
+    -webkit-zoom: 0.8;
+    -moz-transform: scale(0.8, 0.8);
   }
 }
 
 @media (min-width: 768px) {
   #calendar {
-    zoom: 100%;
+    zoom: 1;
+    -ms-zoom: 1;
+    -webkit-zoom: 1;
+    -moz-transform: scale(1, 1);
   }
 }
 
@@ -610,7 +619,7 @@ code {
   text-align: center;
   position: relative;
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
   z-index: 999;
 }
 
@@ -631,21 +640,29 @@ code {
 
 @media (max-width: 576px) {
   .calendar-modal {
-    zoom: 180%;
+    zoom: 1.8;
+    -ms-zoom: 1.8;
+    -webkit-zoom: 1.8;
     padding: 20px 30px 30px;
   }
 }
 
 @media (min-width: 576px) {
   .calendar-modal {
-    zoom: 150%;
+    zoom: 1.5;
+    -ms-zoom: 1.5;
+    -webkit-zoom: 1.5;
+    -moz-transform: scale(1.5, 1.5);
     padding: 20px 30px 30px;
   }
 }
 
 @media (min-width: 768px) {
   .calendar-modal {
-    zoom: 100%;
+    zoom: 1;
+    -ms-zoom: 1;
+    -webkit-zoom: 1;
+    -moz-transform: scale(1, 1);
     padding: 40px 60px 60px;
   }
 }
