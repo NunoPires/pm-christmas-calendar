@@ -65,6 +65,9 @@ code {
   background-color: #0089df !important;
   width: 150px;
   cursor: pointer;
+  margin-top: 50px;
+  font-family: 'recoletamedium';
+  font-size: var(--small-size);
 }
 
 #calendar-animation {

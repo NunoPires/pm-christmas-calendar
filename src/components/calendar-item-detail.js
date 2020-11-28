@@ -20,6 +20,9 @@ export class CalendarItemDetail extends Component {
                     <h2>{this.props.content.title}</h2>
                     <div className="calendar-modal-description">{this.props.content.description}</div>
                     <img alt={this.props.content.title} src={this.props.content.imageURL}></img>
+                    {this.props.content.hasOwnProperty("destinationURL") &&
+						<div className="btn btn-default page-button" onClick={this.handleDetailURL.bind(this)}>Clica aqui!</div>
+                    }
                 </div>
             </div>
         );
