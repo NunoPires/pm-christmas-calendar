@@ -11,9 +11,30 @@
   --medium-size: 60px;
   --small-size: 40px;
   --xsmall-size: 30px;
+  --button-size: 20px;
 
   --modal-background: #FFFFFF;
   --body-background: #E0EFF0;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --big-size: 40px;
+    --medium-size: 30px;
+    --small-size: 20px;
+    --xsmall-size: 15px;
+    --button-size: 12px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  :root {
+    --big-size: 60px;
+    --medium-size: 40px;
+    --small-size: 30px;
+    --xsmall-size: 20px;
+    --button-size: 12px;
+  }
 }
 
 @font-face {
@@ -67,7 +88,7 @@ code {
   cursor: pointer;
   margin: 0 0 30px 0;
   font-family: 'recoletamedium';
-  font-size: var(--xsmall-size) !important;
+  font-size: var(--button-size);
 }
 
 .page-button:hover {
@@ -85,7 +106,7 @@ code {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 577px) {
   #calendar-animation {
     min-height: 768px;
   }
@@ -111,33 +132,6 @@ code {
   max-width: 992px;
 }
 
-@media (max-width: 576px) {
-  #calendar {
-    zoom: 0.5;
-    -ms-zoom: 0.5;
-    -webkit-zoom: 0.5;
-    -moz-transform: scale(0.5, 0.5);
-  }
-}
-
-@media (min-width: 576px) {
-  #calendar {
-    zoom: 0.8;
-    -ms-zoom: 0.8;
-    -webkit-zoom: 0.8;
-    -moz-transform: scale(0.8, 0.8);
-  }
-}
-
-@media (min-width: 768px) {
-  #calendar {
-    zoom: 1;
-    -ms-zoom: 1;
-    -webkit-zoom: 1;
-    -moz-transform: scale(1, 1);
-  }
-}
-
 #calendar>div .front {
   border-radius: 8px;
   font-family: 'recoleta_altbold';
@@ -147,11 +141,25 @@ code {
   height: 100%;
 }
 
+@media (max-width: 576px) {
+  #calendar>div .front {
+    padding: 8px;
+    background-size: contain;
+  }
+}
+
 #calendar>div .front .text {
   font-family: 'recoletamedium';
   font-size: var(--small-size);
   line-height: var(--small-size);
   margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  #calendar>div .front .text {
+    font-size: var(--xsmall-size);
+    line-height: var(--xsmall-size);
+  }
 }
 
 #calendar>div:nth-child(1) {
@@ -485,6 +493,7 @@ code {
   align-items: center;
   justify-content: center;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #calendar>div:nth-child(22) {
@@ -521,6 +530,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
 }
 
 #calendar>div:nth-child(24) {
@@ -606,7 +616,7 @@ code {
 }
 
 .back.viewed {
-  background-color:#ecf0f1;
+  background-color: #ecf0f1;
 }
 
 .disabled {
@@ -640,35 +650,6 @@ code {
   right: 0;
   top: -50px;
   cursor: pointer;
-}
-
-@media (max-width: 576px) {
-  .calendar-modal {
-    zoom: 1.8;
-    -ms-zoom: 1.8;
-    -webkit-zoom: 1.8;
-    padding: 20px 30px 30px;
-  }
-}
-
-@media (min-width: 576px) {
-  .calendar-modal {
-    zoom: 1.5;
-    -ms-zoom: 1.5;
-    -webkit-zoom: 1.5;
-    -moz-transform: scale(1.5, 1.5);
-    padding: 20px 30px 30px;
-  }
-}
-
-@media (min-width: 768px) {
-  .calendar-modal {
-    zoom: 1;
-    -ms-zoom: 1;
-    -webkit-zoom: 1;
-    -moz-transform: scale(1, 1);
-    padding: 40px 60px 60px;
-  }
 }
 
 .calendar-modal .day {

@@ -7,7 +7,7 @@ export class CalendarItem extends Component {
     constructor() {
         super();
         this.state = {showDetail: false, viewed: false};
-        this.audio = new Audio(window.location + "sounds/nope.mp3");
+        this.audio = new Audio(window.location + 'sounds/nope.mp3');
     }
 
     componentDidMount() {
@@ -15,18 +15,18 @@ export class CalendarItem extends Component {
     }
 
     fetchCalendarItemDetail() {
-        return this.props.calendarData === "" ? null : this.props.calendarData;
+        return this.props.calendarData === '' ? null : this.props.calendarData;
     }
 
     handleKeyDown(event) {
-        if(event.key === "Escape" && this.state.showDetail) {
+        if(event.key === 'Escape' && this.state.showDetail) {
             this.setState({showDetail: !this.state.showDetail});
         }
     }
 
     toggleContentAlert() {
         this.audio.play();
-        alert("Ainda não é o dia de abrir esta caixa!");
+        alert('Ainda não é o dia de abrir esta caixa!');
     }
 
     toggleDetail() {
@@ -49,25 +49,25 @@ export class CalendarItem extends Component {
             text = 'Feliz Natal';
         }
 
-        let className = "flip-container";
+        let className = 'flip-container';
         if(content !== null) {
-            className+= " enabled";
+            className+= ' enabled';
         }
 
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
         let backside = null;
         if(this.state.viewed) {
-            backside = <div className="back viewed" onClick={callback.bind(this)}>&#10003;</div>
+            backside = <div className='back viewed' onClick={callback.bind(this)}>&#10003;</div>
         }
         else {
-            backside = <div className="back" onClick={callback.bind(this)}>?</div>
+            backside = <div className='back' onClick={callback.bind(this)}>?</div>
         }
 
         return (
             <div>
                 <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
-                    <div className="flipper">
-                        <div className="front">
+                    <div className='flipper'>
+                        <div className='front'>
                             <div className='day'>{currentDay}</div>
                             <div className='text'>{text}</div>
                         </div>
