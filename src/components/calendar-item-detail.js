@@ -9,14 +9,18 @@ export class CalendarItemDetail extends Component {
         }
     }
      
+    closeDetail() {
+        this.props.onClose();
+    }
+     
     render() {
         if(!this.props.isVisible || this.props.content === null) return null;
 
         return (
             <div className="calendar-modal-overlay">
+                <div className="close-button" onClick={this.closeDetail.bind(this)}></div>
                 <div className="calendar-modal fade-in" onClick={this.handleDetailURL.bind(this)}>
-                    <div className="close-button"></div>
-                    <div className="day">1</div>
+                    <div className="day">{this.props.day}</div>
                     <h2>{this.props.content.title}</h2>
                     <div className="calendar-modal-description">{this.props.content.description}</div>
                     <img alt={this.props.content.title} src={this.props.content.imageURL}></img>

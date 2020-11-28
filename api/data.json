@@ -1,30 +1,37 @@
 [
     {
         "date": "2020-12-01",
-        "title": "Day1",
-        "description": "É Natal, tudo é mágico e portanto, toma uma surpresa!",
+        "title": "It’s beginning to look a lot like Christmas",
+        "description": "Hoje começamos a celebrar o Natal na Premium. E nada como o nosso querido DAF para pôr tudo arranjado e a brilhar!",
         "imageURL": "/test-image.jpg",
-        "destinationURL": "https://fun.premium-minds.com/#15950027408812/15952898613592"
+        "destinationURL": "https://google.com"
     },
     {
         "date": "2020-12-02",
-        "title": "Day2",
-        "description": "É Natal, tudo é mágico e portanto, toma uma surpresa!",
+        "title": "Hoje é a primeira mensal de Dezembro 2020!",
+        "description": "Esta foto foi tirada no longínquo ano de 2013, quando a reunião mensal ainda era só de developers. Hoje passados 7 anos, estaremos todos juntos, a lançar a primeira atividade do mês de Natal, que na Premium, apesar do Covid, continuará a ser tão especial.",
         "imageURL": "/test-image.jpg",
-        "destinationURL": "https://fun.premium-minds.com/#15950027408812/15952898613592"
+        "destinationURL": "https://sapo.pt"
     },
     {
         "date": "2020-12-03",
-        "title": "Day3",
-        "description": "É Natal, tudo é mágico e portanto, toma uma surpresa!",
+        "title": "Conta comigo e eu conto contigo",
+        "description": "Desafio de Natal: Hoje deixa uma nota de apreciação para alguém com quem trabalhas, agradecendo-lhe pelo seu apoio.",
         "imageURL": "/test-image.jpg",
         "destinationURL": "https://fun.premium-minds.com/#15950027408812/15952898613592"
     },
     {
         "date": "2020-12-04",
-        "title": "Day4",
-        "description": "É Natal, tudo é mágico e portanto, toma uma surpresa!",
+        "title": "Back to the Future",
+        "description": "Desafio de Natal: Escreve uma carta para o teu eu futuro em futureme.org  e agenda para a receberes daqui a um ano.",
         "imageURL": "/test-image.jpg",
-        "destinationURL": "https://fun.premium-minds.com/#15950027408812/15952898613592"
+        "destinationURL": "https://www.futureme.org/"
+    },
+    {
+        "date": "2020-12-05",
+        "title": "Elfo doméstico",
+        "description": "Desafio de Natal: Hoje completa uma tarefa doméstica que tens estado a procrastinar.",
+        "imageURL": "/test-image.jpg",
+        "destinationURL": "https://www.futureme.org/"
     }
 ]

@@ -34,7 +34,7 @@ export class CalendarLayout extends Component {
         // });
     }
 
-    getCalendarDays(month, year, dayLimit) {
+    getCalendarDays(year, month, dayLimit) {
         var days = [];
         var date = new Date(year, month, 1);
         while(date.getMonth() === month && date.getDate() !== dayLimit) {
@@ -51,8 +51,18 @@ export class CalendarLayout extends Component {
         }
         
         // 0=January, 11 = December
-        let days = _.map(this.getCalendarDays(11, 2020, 26), (date) => {
-            return <CalendarItem key={date.getDate()} date={date} calendarData={this.state.calendarData} sound={this.audio}/>   
+        let days = _.map(this.getCalendarDays(2020, 11, 26), (date) => {
+
+            let key = date.toISOString().split("T")[0];
+            if(this.state.calendarData !== null) {
+                for(let detail of this.state.calendarData) {
+                    if(detail.date === key) {           
+                        return <CalendarItem key={date.getDate()} date={date} calendarData={detail} sound={this.audio}/>
+                    }
+                }
+            }
+
+            return <CalendarItem key={date.getDate()} date={date} calendarData="" sound={this.audio}/>
         });
         
         return (

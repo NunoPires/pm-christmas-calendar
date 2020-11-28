@@ -14,27 +14,10 @@ export class CalendarItem extends Component {
     }
 
     fetchCalendarItemDetail() {
-        /*let key = this.props.date.toISOString().split("T")[0];
-        if(this.props.calendarData !== null) {
-            for(let detail of this.props.calendarData) {
-                if(detail.date === key) {           
-                    return detail;
-                }
-            }
-        }
-        return null;*/
-
-        let detail = {
-            title: "It’s beginning to look a lot like Christmas", 
-            description: "Hoje começamos a celebrar o Natal na Premium. E quem se não o DAF para pôr tudo arranjado e a brilhar!",
-            imageURL: window.location.origin + "/test-image.jpg",
-            destinationURL: "https://fun.premium-minds.com/#15950027408812/15952898613592"
-        };
-        return detail;
+        return this.props.calendarData === "" ? null : this.props.calendarData;
     }
 
     handleKeyDown(event) {
-
         if(event.key === "Escape" && this.state.showDetail) {
             this.setState({showDetail: !this.state.showDetail});
         }
@@ -50,14 +33,20 @@ export class CalendarItem extends Component {
         ls.set(this.props.date.getDate(), true);
     }
 
+    closeDetail() {
+        alert("close!")
+    }
+
     render() {
         let className = "flip-container";
+
         if(this.state.viewed) {
             className+= " viewed";
         }
     
         let currentDay = this.props.date.getDate();
         let content = this.fetchCalendarItemDetail();
+
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
         let text = '';
 
@@ -71,7 +60,7 @@ export class CalendarItem extends Component {
 
         return (
             <div>
-                <div tabIndex={1} className={className} onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
+                <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
                     <div className="flipper">
                         <div className="front">
                             <div className='day'>{currentDay}</div>
