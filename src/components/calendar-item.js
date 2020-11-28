@@ -57,7 +57,7 @@ export class CalendarItem extends Component {
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
         let backside = null;
         if(this.state.viewed) {
-            backside = <div className="back viewed" onClick={callback.bind(this)}>&#9989;</div>
+            backside = <div className="back viewed" onClick={callback.bind(this)}>&#10003;</div>
         }
         else {
             backside = <div className="back" onClick={callback.bind(this)}>?</div>
