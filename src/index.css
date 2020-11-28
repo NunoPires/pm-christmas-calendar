@@ -12,7 +12,7 @@
   --small-size: 40px;
   --xsmall-size: 30px;
 
-  --modal-background: #D8D8D8;
+  --modal-background: #FFFFFF;
   --body-background: #E0EFF0;
 }
 
@@ -602,7 +602,7 @@ code {
 
 .calendar-modal {
   width: 90%;
-  max-width: 992px;
+  max-width: 765px;
   border-radius: 8px;
   background-color: var(--modal-background);
   margin: 70px auto;
