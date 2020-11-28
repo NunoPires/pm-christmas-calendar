@@ -10,6 +10,7 @@
   --big-size: 80px;
   --medium-size: 60px;
   --small-size: 40px;
+  --xsmall-size: 30px;
 
   --modal-background: #D8D8D8;
   --body-background: #E0EFF0;
@@ -60,13 +61,17 @@ code {
 }
 
 .page-button {
-  padding: 10px !important;
-  color: white !important;
-  background-color: var(--light-green) !important;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--light-green);
   cursor: pointer;
   margin-top: 50px;
   font-family: 'recoletamedium';
-  font-size: var(--small-size);
+  font-size: var(--xsmall-size);
+}
+
+.page-button:hover {
+  color: white;
 }
 
 #calendar-animation {
