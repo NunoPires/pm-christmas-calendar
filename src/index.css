@@ -10,6 +10,8 @@
   --big-size: 80px;
   --medium-size: 60px;
   --small-size: 40px;
+
+  --modal-background: #D8D8D8;
 }
 
 @font-face {
@@ -28,6 +30,10 @@
   font-weight: normal;
   font-style: normal;
 
+}
+
+*:focus {
+  outline: none;
 }
 
 body,
@@ -513,10 +519,7 @@ code {
 
 .flip-container {
   perspective: 1000px;
-}
-
-.flip-container:hover {
-  z-index: 9000;
+  height: 100%;
 }
 
 .flip-container:hover .flipper {
@@ -568,28 +571,90 @@ code {
 }
 
 .calendar-modal {
-  margin: 2% auto;
-  background-color: white;
-  border-radius: 3px;
-  width: 60%;
-  padding: 2%;
-  z-index: 1000;
+  width: 90%;
+  max-width: 992px;
+  border-radius: 8px;
+  background-color: var(--modal-background);
+  margin: 70px auto;
+  color: var(--text);
+  text-align: center;
   position: relative;
-  color: black;
-  cursor: default;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.calendar-modal.fade-in {
+  opacity: 1;
+}
+
+.calendar-modal .close-button {
+  width: 38px;
+  height: 38px;
+  background-image: url('assets/images/close.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+@media (max-width: 576px) {
+  .calendar-modal {
+    zoom: 180%;
+    padding: 20px 30px 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .calendar-modal {
+    zoom: 150%;
+    padding: 20px 30px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendar-modal {
+    zoom: 100%;
+    padding: 40px 60px 60px;
+  }
+}
+
+.calendar-modal .day {
+  background-image: url('assets/images/day1.svg');
+  background-size: 80px;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  font-family: 'recoleta_altbold';
+  font-size: var(--small-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.calendar-modal img {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-modal h2 {
+  font-size: 30px;
+  font-family: 'recoletamedium';
 }
 
 .calendar-modal-description {
-  font-size: 30px;
-  color: var(--text);
+  font-size: 20px;
+  letter-spacing: .5px;
+  margin-bottom: 30px;
 }
 
 .calendar-modal-overlay {
   position: fixed;
   display: block;
   overflow: auto;
-  width: 100%;
-  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;

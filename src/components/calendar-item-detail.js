@@ -14,13 +14,12 @@ export class CalendarItemDetail extends Component {
 
         return (
             <div className="calendar-modal-overlay">
-                <div className="calendar-modal" onClick={this.handleDetailURL.bind(this)}>
+                <div className="calendar-modal fade-in" onClick={this.handleDetailURL.bind(this)}>
+                    <div className="close-button"></div>
+                    <div className="day">1</div>
                     <h2>{this.props.content.title}</h2>
                     <div className="calendar-modal-description">{this.props.content.description}</div>
-                    <img alt={this.props.content.title} src={this.props.content.imageURL} width="750" height="500"></img>
-                    {this.props.content.hasOwnProperty("destinationURL") &&
-						<div className="btn btn-default page-button" onClick={this.handleDetailURL}>Clica aqui!</div>
-                    }
+                    <img alt={this.props.content.title} src={this.props.content.imageURL}></img>
                 </div>
             </div>
         );

@@ -25,8 +25,8 @@ export class CalendarItem extends Component {
         return null;*/
 
         let detail = {
-            title: "It's beginning to look like Christmas", 
-            description: "É Natal, tudo é mágico e portanto, toma uma surpresa!",
+            title: "It’s beginning to look a lot like Christmas", 
+            description: "Hoje começamos a celebrar o Natal na Premium. E quem se não o DAF para pôr tudo arranjado e a brilhar!",
             imageURL: window.location.origin + "/test-image.jpg",
             destinationURL: "https://fun.premium-minds.com/#15950027408812/15952898613592"
         };
@@ -51,7 +51,7 @@ export class CalendarItem extends Component {
     }
 
     render() {
-        let className = "back";
+        let className = "flip-container";
         if(this.state.viewed) {
             className+= " viewed";
         }
@@ -70,20 +70,22 @@ export class CalendarItem extends Component {
         }
 
         return (
-            <div className="flip-container">
-                <div className="flipper">
-                    <div className="front">
-                        <div className='day'>{currentDay}</div>
-                        <div className='text'>{text}</div>
-                    </div>
-                    <div tabIndex={1} className={className} onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
-                        ?
-                        <CalendarItemDetail 
-                            day={currentDay} 
-                            isVisible={this.state.showDetail} 
-                            content={content} />
+            <div>
+                <div tabIndex={1} className={className} onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
+                    <div className="flipper">
+                        <div className="front">
+                            <div className='day'>{currentDay}</div>
+                            <div className='text'>{text}</div>
+                        </div>
+                        <div className="back">
+                            ?
+                        </div>
                     </div>
                 </div>
+                <CalendarItemDetail 
+                    day={currentDay} 
+                    isVisible={this.state.showDetail} 
+                    content={content} />
             </div>
         );
     }
