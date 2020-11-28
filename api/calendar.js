@@ -3,7 +3,7 @@ const { join } = require('path')
 
 module.exports = (req, res) => {
 
-    const DATE_LIMIT = new Date("2020-12-03")
+    const DATE_LIMIT = new Date("2020-12-26")
     //const DATE_LIMIT = new Date()
 
     const rawdata = readFileSync(join(__dirname, 'data.json'), 'utf8')
