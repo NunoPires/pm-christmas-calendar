@@ -51,7 +51,7 @@ export class CalendarItem extends Component {
     }
 
     render() {
-        let className = "calendar-item";
+        let className = "back";
         if(this.state.viewed) {
             className+= " viewed";
         }
@@ -70,15 +70,21 @@ export class CalendarItem extends Component {
         }
 
         return (
-            <div tabIndex={1} className={className} onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
-                <div className='day'>{currentDay}</div>
-                <div className='text'>{text}</div>
-                <CalendarItemDetail 
-                    day={currentDay} 
-                    isVisible={this.state.showDetail} 
-                    content={content} />
-            </div>  
-
+            <div className="flip-container">
+                <div className="flipper">
+                    <div className="front">
+                        <div className='day'>{currentDay}</div>
+                        <div className='text'>{text}</div>
+                    </div>
+                    <div tabIndex={1} className={className} onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
+                        ?
+                        <CalendarItemDetail 
+                            day={currentDay} 
+                            isVisible={this.state.showDetail} 
+                            content={content} />
+                    </div>
+                </div>
+            </div>
         );
     }
 }

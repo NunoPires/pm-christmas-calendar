@@ -24,14 +24,14 @@ export class CalendarLayout extends Component {
                 }
         );
 
-        this.animation 
-        = Lottie.loadAnimation({
-            container: document.getElementById("calendar-animation"),
-            renderer: 'html',
-            loop: true,
-            autoplay: true,
-            animationData: animationData
-        });
+        // this.animation 
+        // = Lottie.loadAnimation({
+        //     container: document.getElementById("calendar-animation"),
+        //     renderer: 'html',
+        //     loop: true,
+        //     autoplay: true,
+        //     animationData: animationData
+        // });
     }
 
     getCalendarDays(month, year, dayLimit) {
