@@ -38,35 +38,35 @@ export class CalendarItem extends Component {
     }
 
     render() {
-        let className = "flip-container";
-
-        if(this.state.viewed) {
-            className+= " viewed";
-        }
     
         let currentDay = this.props.date.getDate();
         let content = this.fetchCalendarItemDetail();
 
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
+        
         let text = '';
-
         if(currentDay === 25) {
             text = 'Feliz Natal';
         }
 
-        if(content === null) {
-            className+= " disabled";
+        let className = "flip-container";
+        if(content !== null) {
+            className+= " enabled";
+        }
+
+        if(this.state.viewed) {
+            className+= " viewed";
         }
 
         return (
             <div>
-                <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
+                <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)}>
                     <div className="flipper">
                         <div className="front">
                             <div className='day'>{currentDay}</div>
                             <div className='text'>{text}</div>
                         </div>
-                        <div className="back">
+                        <div className="back" onClick={callback.bind(this)}>
                             ?
                         </div>
                     </div>

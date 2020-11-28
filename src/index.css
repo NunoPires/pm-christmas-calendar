@@ -549,7 +549,7 @@ code {
   height: 100%;
 }
 
-.flip-container:hover .flipper {
+.flip-container.enabled:hover .flipper {
   transform: rotateY(180deg);
 }
 
