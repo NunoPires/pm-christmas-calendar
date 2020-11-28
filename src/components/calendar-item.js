@@ -7,6 +7,7 @@ export class CalendarItem extends Component {
     constructor() {
         super();
         this.state = {showDetail: false, viewed: false};
+        this.audio = new Audio(window.location + "sounds/nope.mp3");
     }
 
     componentDidMount() {
@@ -24,7 +25,8 @@ export class CalendarItem extends Component {
     }
 
     toggleContentAlert() {
-        alert("Ainda não é o dia de abrir esta caixa!")
+        this.audio.play();
+        alert("Ainda não é o dia de abrir esta caixa!");
     }
 
     toggleDetail() {
@@ -41,8 +43,6 @@ export class CalendarItem extends Component {
     
         let currentDay = this.props.date.getDate();
         let content = this.fetchCalendarItemDetail();
-
-        let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
         
         let text = '';
         if(currentDay === 25) {
@@ -58,9 +58,11 @@ export class CalendarItem extends Component {
             className+= " viewed";
         }
 
+        let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
+
         return (
             <div>
-                <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)}>
+                <div tabIndex={1} className={className} onClose={this.closeDetail.bind(this)}  onKeyDown={this.handleKeyDown.bind(this)} onClick={callback.bind(this)}>
                     <div className="flipper">
                         <div className="front">
                             <div className='day'>{currentDay}</div>
