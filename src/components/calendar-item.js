@@ -34,7 +34,7 @@ export class CalendarItem extends Component {
     }
 
     closeDetail() {
-        alert("close!")
+        this.setState({showDetail: !this.state.showDetail, viewed: true});
     }
 
     render() {
@@ -74,7 +74,8 @@ export class CalendarItem extends Component {
                 <CalendarItemDetail 
                     day={currentDay} 
                     isVisible={this.state.showDetail} 
-                    content={content} />
+                    content={content}
+                    closeCallback={this.closeDetail.bind(this)} />
             </div>
         );
     }

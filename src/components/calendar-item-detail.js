@@ -9,17 +9,13 @@ export class CalendarItemDetail extends Component {
         }
     }
      
-    closeDetail() {
-        this.props.onClose();
-    }
-     
     render() {
         if(!this.props.isVisible || this.props.content === null) return null;
 
         return (
             <div className="calendar-modal-overlay">
-                <div className="close-button" onClick={this.closeDetail.bind(this)}></div>
-                <div className="calendar-modal fade-in" onClick={this.handleDetailURL.bind(this)}>
+                <div className="calendar-modal fade-in">
+                    <div className="close-button" onClick={this.props.closeCallback}></div>
                     <div className="day">{this.props.day}</div>
                     <h2>{this.props.content.title}</h2>
                     <div className="calendar-modal-description">{this.props.content.description}</div>
