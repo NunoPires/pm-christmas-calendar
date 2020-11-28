@@ -10,6 +10,7 @@
   --big-size: 80px;
   --medium-size: 60px;
   --small-size: 40px;
+  --xsmall-size: 30px;
 
   --modal-background: #D8D8D8;
   --body-background: #E0EFF0;
@@ -60,14 +61,17 @@ code {
 }
 
 .page-button {
-  padding: 10px !important;
-  color: white !important;
-  background-color: #0089df !important;
-  width: 150px;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--light-green);
   cursor: pointer;
   margin-top: 50px;
   font-family: 'recoletamedium';
-  font-size: var(--small-size);
+  font-size: var(--xsmall-size);
+}
+
+.page-button:hover {
+  color: white;
 }
 
 #calendar-animation {
@@ -130,7 +134,6 @@ code {
   font-family: 'recoleta_altbold';
   padding: 16px;
   color: white;
-  cursor: pointer;
   width: 100%;
   height: 100%;
 }
@@ -323,8 +326,8 @@ code {
 
 #calendar>div:nth-child(12) .front {
   background-color: var(--dark-green);
-  font-size: var(--big-size);
-  line-height: var(--big-size);
+  font-size: var(--medium-size);
+  line-height: var(--medium-size);
   background-image: url('assets/images/day12.svg');
   background-position: 10px 10px;
   display: flex;
@@ -418,8 +421,8 @@ code {
 #calendar>div:nth-child(18) .front {
   background-color: var(--camel);
   color: var(--camel-box-text);
-  font-size: var(--big-size);
-  line-height: var(--big-size);
+  font-size: var(--medium-size);
+  line-height: var(--medium-size);
   background-image: url('assets/images/day18.png');
   display: flex;
   align-items: center;
@@ -503,8 +506,8 @@ code {
 
 #calendar>div:nth-child(23) .front {
   background-color: var(--dark-green);
-  font-size: var(--big-size);
-  line-height: var(--big-size);
+  font-size: var(--medium-size);
+  line-height: var(--medium-size);
   background-image: url('assets/images/day23.png');
   display: flex;
   align-items: center;
