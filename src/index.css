@@ -596,6 +596,10 @@ code {
   justify-content: center;
 }
 
+.back.viewed {
+  background-color:#ecf0f1;
+}
+
 .disabled {
   cursor: default;
 }
