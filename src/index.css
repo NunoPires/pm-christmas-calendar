@@ -65,9 +65,9 @@ code {
   color: white;
   background-color: var(--light-green);
   cursor: pointer;
-  margin-top: 50px;
+  margin: 0 0 30px 0;
   font-family: 'recoletamedium';
-  font-size: var(--xsmall-size);
+  font-size: var(--xsmall-size) !important;
 }
 
 .page-button:hover {
