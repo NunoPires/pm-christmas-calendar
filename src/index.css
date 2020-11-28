@@ -65,9 +65,9 @@ code {
   color: white;
   background-color: var(--light-green);
   cursor: pointer;
-  margin-top: 50px;
+  margin: 0 0 30px 0;
   font-family: 'recoletamedium';
-  font-size: var(--xsmall-size);
+  font-size: var(--xsmall-size) !important;
 }
 
 .page-button:hover {
@@ -603,6 +603,10 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.back.viewed {
+  background-color:#ecf0f1;
 }
 
 .disabled {

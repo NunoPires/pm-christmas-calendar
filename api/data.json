@@ -4,70 +4,63 @@
         "title": "It’s beginning to look a lot like Christmas",
         "description": "Hoje começamos a celebrar o Natal na Premium. E nada como o nosso querido DAF para pôr tudo arranjado e a brilhar!",
         "imageURL": "/days/day01-eiz0Iecooc.png",
-        "destinationURL": ""
+        "destinationURL": "https://streamable.com/k3ndfo"
     },
     {
         "date": "2020-12-02",
         "title": "Hoje é a primeira mensal de Dezembro 2020!",
         "description": "Esta foto foi tirada no longínquo ano de 2013, quando a reunião mensal ainda era só de developers. Hoje passados 7 anos, estaremos todos juntos, a lançar a primeira atividade do mês de Natal, que na Premium, apesar do Covid, continuará a ser tão especial.",
-        "imageURL": "/days/day02-quie8ooroo4ee8iuQuoh.jpg",
-        "destinationURL": ""
+        "imageURL": "/days/day02-quie8ooroo4ee8iuQuoh.jpg"
     },
     {
         "date": "2020-12-03",
-        "title": "Conta comigo e eu conto contigo",
-        "description": "Desafio de Natal: Hoje deixa uma nota de apreciação para alguém com quem trabalhas, agradecendo-lhe pelo seu apoio.",
-        "imageURL": "/days/day03-EeWae9gie5fahmeiGhie.jpg",
-        "destinationURL": ""
+        "title": "Desafio de Natal",
+        "description": "Hoje deixa uma nota de apreciação para alguém com quem trabalhas, agradecendo-lhe pelo seu apoio.",
+        "imageURL": "/days/day03-EeWae9gie5fahmeiGhie.jpg"
     },
     {
         "date": "2020-12-04",
-        "title": "Back to the Future",
-        "description": "Desafio de Natal: Escreve uma carta para o teu eu futuro em futureme.org  e agenda para a receberes daqui a um ano.",
+        "title": "Desafio de Natal",
+        "description": "Escreve uma carta para o teu eu futuro em futureme.org  e agenda para a receberes daqui a um ano.",
         "imageURL": "/days/day04-iz8ohthuizohH0lukeez.jpg",
         "destinationURL": "https://www.futureme.org/"
     },
     {
         "date": "2020-12-05",
-        "title": "Elfo doméstico",
-        "description": "Desafio de Natal: Hoje completa uma tarefa doméstica que tens estado a procrastinar.",
-        "imageURL": "",
-        "destinationURL": ""
+        "title": "Desafio de Natal",
+        "description": "Hoje completa uma tarefa doméstica que tens estado a procrastinar.",
+        "imageURL": "/days/day05-IkfdsacaWadkfla.gif"
     },
     {
         "date": "2020-12-06",
         "title": "Inspira, Expira, Não Pira",
         "description": "Respira profundamente e investe um momento para apreciares a pessoa que és!",
-        "imageURL": "/days/day06-jahzie4uthiechohsaNe.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day06-jahzie4uthiechohsaNe.gif"
     },
     {
         "date": "2020-12-07",
-        "title": "Desafio de Nata",
+        "title": "Desafio de Natal",
         "description": "Partilha no chat, num canal à tua escolha, a tua receita de natal favorita.",
-        "imageURL": "/days/day07-aig8yaepooQueQuezaip.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day07-aig8yaepooQueQuezaip.gif"
     },
     {
         "date": "2020-12-08",
         "title": "Amigos no trabalho! Isso existe?",
         "description": "Hoje tira um momento para apreciares a amizade que sentes pelas pessoas com quem trabalhas.",
-        "imageURL": "",
-        "destinationURL": ""
+        "imageURL": "/days/day08-Adaifaekcadscawefia.jpg",
+        "destinationURL": "https://streamable.com/kgtihn"
     },
     {
         "date": "2020-12-09",
         "title": "O Pai Natal vai a caminho de tua casa!",
         "description": "...mas calma ainda não é hoje que chega! Acabou de passar pela Premium e decidiu usar os CTT para te enviar uma surpresa! Chega nos próximos dias.",
-        "imageURL": "/days/day09-neDoosho1uot7EiRujeo.jpg",
-        "destinationURL": ""
+        "imageURL": "/days/day09-neDoosho1uot7EiRujeo.jpg"
     },
     {
         "date": "2020-12-10",
         "title": "Desafio de Natal",
         "description": "Liga a alguém com quem tenhas gostado de trabalhar e com quem já não falas há muito tempo.",
-        "imageURL": "/days/day10-Ieb6ahHachaileaZaedu.jpg",
-        "destinationURL": ""
+        "imageURL": "/days/day10-Ieb6ahHachaileaZaedu.jpg"
     },
     {
         "date": "2020-12-11",
@@ -80,15 +73,13 @@
         "date": "2020-12-12",
         "title": "Vamos a meio do caminho!",
         "description": "Hoje relaxa e saboreia um dos teus doces de natal preferidos. Se não gostares de doces de natal, come outro doce qualquer, se não gostares de doces come um salgado, olha come qualquer coisa que te dê prazer e saboreia.",
-        "imageURL": "/days/day12-Iaeckcaeafklasdcadslkfads.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day12-Iaeckcaeafklasdcadslkfads.gif"
     },
     {
         "date": "2020-12-13",
         "title": "Inspira, Expira, Não Pira",
         "description": "Pensa num momento difícil da tua vida e reconhece o que de bom surgiu daí.",
-        "imageURL": "/days/day13-foh1vohNgalie0leixiv.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day13-foh1vohNgalie0leixiv.gif"
     },
     {
         "date": "2020-12-14",
@@ -101,8 +92,7 @@
         "date": "2020-12-15",
         "title": "Desafio de Natal",
         "description": "Não te queixes durante 24 horas.",
-        "imageURL": "/days/day15-oDahJaaVuboophohvoo8.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day15-oDahJaaVuboophohvoo8.gif"
     },
     {
         "date": "2020-12-16",
@@ -136,22 +126,20 @@
         "date": "2020-12-20",
         "title": "Inspira, Expira, Não Pira",
         "description": "Hoje faz a meditação do chocolate. Fecha os olhos, coloca um quadrado de chocolate na boca e deixa-o derreter. Quantos sabores diferentes consegues detetar?",
-        "imageURL": "/days/day20-aeRahfai1phah6ie1Lip.gif",
-        "destinationURL": ""
+        "imageURL": "/days/day20-aeRahfai1phah6ie1Lip.gif"
     },
     {
         "date": "2020-12-21",
         "title": "Campeonato de Piadas",
         "description": "Prepara a tua melhor piada. Vem aí o Campeonato de Piadas é já dia 23 às 14:00. Marca na tua agenda.",
-        "imageURL": "/days/day21-xughosh4ooS7eibohCha.jpg",
-        "destinationURL": ""
+        "imageURL": "/days/day21-xughosh4ooS7eibohCha.jpg"
     },
     {
         "date": "2020-12-22",
         "title": "Premium 3D",
         "description": "Hoje vem visitar a Premium Virtual. Aproveita para te encontrares com as pessoas de quem gostas num mundo paralelo.",
-        "imageURL": "",
-        "destinationURL": ""
+        "imageURL": "/days/day22-aeloerue5naiVae2yo2e.jpg",
+        "destinationURL": "http://tiny.cc/premium3d"
     },
     {
         "date": "2020-12-23",

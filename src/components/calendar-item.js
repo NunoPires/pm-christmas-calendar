@@ -54,11 +54,14 @@ export class CalendarItem extends Component {
             className+= " enabled";
         }
 
-        if(this.state.viewed) {
-            className+= " viewed";
-        }
-
         let callback = content !== null ? this.toggleDetail : this.toggleContentAlert;
+        let backside = null;
+        if(this.state.viewed) {
+            backside = <div className="back viewed" onClick={callback.bind(this)}>&#10003;</div>
+        }
+        else {
+            backside = <div className="back" onClick={callback.bind(this)}>?</div>
+        }
 
         return (
             <div>
@@ -68,9 +71,7 @@ export class CalendarItem extends Component {
                             <div className='day'>{currentDay}</div>
                             <div className='text'>{text}</div>
                         </div>
-                        <div className="back" onClick={callback.bind(this)}>
-                            ?
-                        </div>
+                        {backside}
                     </div>
                 </div>
                 <CalendarItemDetail 
