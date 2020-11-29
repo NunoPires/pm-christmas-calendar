@@ -5,19 +5,18 @@
 }
 
 .snow-container {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	pointer-events: none;
-	transform: scale(1.6);
 
 	.snow {
 		$total: 200;
 		position: absolute;
-		width: 5px;
-		height: 5px;
+		width: 10px;
+		height: 10px;
 		background: white;
 		border-radius: 50%;
 
