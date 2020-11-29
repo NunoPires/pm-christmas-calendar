@@ -8,7 +8,7 @@
     },
     {
         "date": "2020-12-02",
-        "title": "Hoje é a primeira mensal de Dezembro 2020!",
+        "title": "Hoje é a primeira mensal de Dezembro de 2020!",
         "description": "Esta foto foi tirada no longínquo ano de 2013, quando a reunião mensal ainda era só de developers. Hoje passados 7 anos, estaremos todos juntos, a lançar a primeira atividade do mês de Natal, que na Premium, apesar do Covid, continuará a ser tão especial.",
         "imageURL": "/days/day02-quie8ooroo4ee8iuQuoh.jpg"
     },
@@ -104,7 +104,7 @@
     {
         "date": "2020-12-17",
         "title": "Jingle Natal live às 12:00!!!",
-        "description": "Abre este QR Code e junta-te a nós no Zoom - https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09",
+        "description": "Abre este QR Code e junta-te a nós no Zoom",
         "imageURL": "/days/day17-xai0jahbahj8Ahleem9A.png",
         "destinationURL": "http://tiny.cc/jingledenatal"
     },
@@ -112,7 +112,7 @@
         "date": "2020-12-18",
         "title": "Premium 2020 Academy Awards",
         "description": "Hoje é o dia da Ante-estreia do filme de Natal e a entrega de Prémios 2020. Junta-te no Zoom",
-        "imageURL": "",
+        "imageURL": "/days/day18-Ikcadkfaicalafiswefa.jpg",
         "destinationURL": "https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09"
     },
     {
@@ -144,14 +144,14 @@
     {
         "date": "2020-12-23",
         "title": "Campeonato de Piadas",
-        "description": "Hoje acontece o tradicional campeonato de piadas - https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09",
+        "description": "Hoje às 14:00 acontece o tradicional concurso de piadas. Clica no botão e junta-te-a nós no Zoom.",
         "imageURL": "",
         "destinationURL": "https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09"
     },
     {
         "date": "2020-12-24",
         "title": "Christmas Coffee",
-        "description": "Hoje junta-te a nós a partir das 14:00 para dois dedos de conversa - https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09",
+        "description": "Hoje junta-te a nós a partir das 14:00 para dois dedos de conversa",
         "imageURL": "/days/day24-reiy1eiger2quae5phiB.gif",
         "destinationURL": "https://us02web.zoom.us/j/85823939846?pwd=dURmZVN6c2ZuaTVWcURCckNaUkUxZz09"
     }
