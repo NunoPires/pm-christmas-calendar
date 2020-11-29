@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import _ from 'underscore';
-import Lottie from 'lottie-web';
-import animationData from '../animations/christmas.json';
 import {CalendarItem} from './calendar-item.js';
 import {CalendarAPI} from '../services/calendar-api.js';
  
@@ -23,15 +21,6 @@ export class CalendarLayout extends Component {
                     console.log(error);
                 }
         );
-
-        // this.animation 
-        // = Lottie.loadAnimation({
-        //     container: document.getElementById("calendar-animation"),
-        //     renderer: 'html',
-        //     loop: true,
-        //     autoplay: true,
-        //     animationData: animationData
-        // });
     }
 
     getCalendarDays(year, month, dayLimit) {
