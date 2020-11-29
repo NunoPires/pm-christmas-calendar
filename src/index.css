@@ -637,6 +637,25 @@ code {
   z-index: 999;
 }
 
+@media (max-width: 576px) {
+  .calendar-modal {
+    padding: 20px 30px 30px;
+  }
+}
+
+@media (min-width: 577px) {
+  .calendar-modal {
+    padding: 20px 30px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendar-modal {
+    padding: 40px 60px 60px;
+  }
+}
+
+
 .calendar-modal.fade-in {
   opacity: 1;
 }
