@@ -25,8 +25,8 @@ export class CalendarItem extends Component {
     }
 
     toggleContentAlert() {
-        this.audio.play();
-        alert('Ainda não é o dia de abrir esta caixa!');
+        //this.audio.play();
+        //alert('Ainda não é o dia de abrir esta caixa!');
     }
 
     toggleDetail() {
