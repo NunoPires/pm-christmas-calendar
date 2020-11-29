@@ -615,8 +615,10 @@ code {
   justify-content: center;
 }
 
-.back.viewed {
-  background-color: #ecf0f1;
+@media (max-width: 576px) {
+  .back {
+    background-size: contain;
+  }
 }
 
 .disabled {
