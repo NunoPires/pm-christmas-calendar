@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="logo-premium"></div>
-        <div className="title">Calendário do Advento Premium</div>
+        <div className="title">Calendário Premium do Advento</div>
       </header>
       <CalendarLayout />
       <div className="snow-container">
