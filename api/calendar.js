@@ -3,8 +3,8 @@ const { join } = require('path')
 
 module.exports = (req, res) => {
 
-    const DATE_LIMIT = new Date("2020-12-25")
-    //const DATE_LIMIT = new Date()
+    //const DATE_LIMIT = new Date("2020-12-25")
+    const DATE_LIMIT = new Date()
 
     const rawdata = readFileSync(join(__dirname, 'data.json'), 'utf8')
     let calendar = JSON.parse(rawdata);
