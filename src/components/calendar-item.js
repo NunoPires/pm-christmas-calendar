@@ -58,6 +58,7 @@ export class CalendarItem extends Component {
         let backside = null;
         if(this.state.viewed) {
             backside = <div className='back viewed' onClick={callback.bind(this)}>&#10003;</div>
+            className+= ' viewed-front';
         }
         else {
             backside = <div className='back' onClick={callback.bind(this)}>?</div>

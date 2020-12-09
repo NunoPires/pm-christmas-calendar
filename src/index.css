@@ -717,3 +717,8 @@ code {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
+.viewed-front {
+  filter: grayscale(1);
+  opacity: .7;
+}
